@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container py-3 d-flex justify-content-center align-items-center min-vh-100">
+      <div style="max-width: 600px; min-width: 400px;" class="p-4 row">
+        <div class="col">
+          <h2>Form Login</h2>
+          <form onsubmit="handleLogin(event)" >
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Username</label
+              >
+              <input
+                type="text"
+                name="username"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="inputPassword5" class="form-label">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="inputPassword5"
+                class="form-control"
+                aria-describedby="passwordHelpBlock"
+                placeholder="Enter your password"
+              />
+            </div>
+            <div class="col-auto">
+              <button type="submit" style="width: 100%;" class="btn btn-primary mb-3">
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/scriptLogin.js"></script>
+  </body>
+</html>
